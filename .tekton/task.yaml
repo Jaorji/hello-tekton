@@ -5,7 +5,7 @@ metadata:
 spec:
   inputs:
     params:
-    - name: task-pvc
+      - name: task-pvc
         description: the output pvc
       - name: repository
         description: the git repo
@@ -73,7 +73,7 @@ spec:
         - name: HOME
           value: "/root"
         - name: REGISTRY_NAMESPACE
-          value: $(inputs.params.registryNamespace)
+          value: $(inputs.params.registryNamespaceji)
         - name: IMAGE_NAME
           value: $(inputs.params.imageName)
         - name: ARCHIVE_DIR
